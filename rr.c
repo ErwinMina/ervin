@@ -18,17 +18,7 @@ void bubbleSort(int *num, int size)
     }
   }
 }
-int main()
-{
-  int a[]={1,5,7,2,34,6,8,6,1,5};
-  
-  bubbleSort(a, 10);  // вызываем функцию сортировки
-  // Выводим отсортированные элементы массива
-  for (int i = 0; i<10; i++)
-    printf("%d ", a[i]);
-  getchar(); getchar();
-  return 0;
-}
+
 
 
 #include <stdlib.h>
@@ -49,16 +39,7 @@ char simbol='?';
 
     return simbol;
 }
-int main()
-{
-char c[]="";
-char b[]="a-V_#_F_S-В&";
-char z[]="  () ";
-    printf("%c\n",cam(c));
-    printf("%c\n",cam(b));
-    printf("%c\n",cam(z));
-    return 0;
-}
+
 
 
 
@@ -77,15 +58,7 @@ void Fibanachi(int *a,const int  n){
     }
 }
 
-int main()
-{
-int  arr[20];
-    Fibanachi(arr,20);
-    for(int i=0;i<20;i++){
-    printf("%d ",arr[i]);
-    }
-    return 0;
-}
+
 
 
 // Перевод из десятичной в двоичную систему счисления
@@ -108,17 +81,7 @@ int symbol =character; //символ в ситсеме аски
     }
 }
 
-int main()
-{
 
-bool bits1[8];
-encode_char('A', bits1);
-for(int i = 0; i < 8; i++){
-printf("%d", bits1[i]);
-}
-printf("\n");
-return 0;
-}
 
 #include <stdio.h>
 #include <stdbool.h>
@@ -129,20 +92,14 @@ int sum=0;
     for(int i=0,j=7;i<=7;i++,j--){
         if(bits[i]==1){
         sum+=pow(2,j);
-//        printf("%d\n",sum);
+
         }    
     }
 char res=sum;
 return res;
 }
 
-    int main()
-{
-    
-bool bits2[8] = {0,0,1,0,0,0,0,1};
-printf("%c\n", decode_byte(bits2));
-    return 0;
-}
+
 
 #include <stdio.h>
 #include <stdbool.h>
@@ -153,20 +110,14 @@ int sum=0;
     for(int i=0,j=7;i<=7;i++,j--){
         if(bits[i]==1){
         sum+=pow(2,j);
-//        printf("%d\n",sum);
+
         }    
     }
 char res=sum;
 return res;
 }
 
-    int main()
-{
-    
-bool bits2[8] = {0,0,1,0,0,0,0,1};
-printf("%c\n", decode_byte(bits2));
-    return 0;
-}
+
 
 #include <string.h>
 #include <stdio.h>
@@ -188,13 +139,7 @@ int a(const int aa){
     return sum;
 }
 
-int main()
-{   
-    
-    
-printf("%d\n",a(15));
-    return 0;
-}
+
 
 #include <string.h>
 #include <stdio.h>
@@ -205,24 +150,13 @@ void upp(char *a, const int count){
     for(int i=0;i<count;i++){
         if(islower(a[i])){
         a[i]=toupper(a[i]);
-//       printf("%c\n",a[i]);
+
         }
         else if(isupper(a[i])){
         a[i]=tolower(a[i]);
-//      printf("%c\n",a[i]);
+
         }
     }    
 }
 
-int main()
-{
-    
-    
-char array[]="HeLoO wOrLd";
-    upp(array,11);
-    for(int i=0; i<11;i++){
-    printf("%c",array[i]);    
-    }
-    
-    return 0;
-}
+
