@@ -1,3 +1,4 @@
+//sort boble
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -20,7 +21,7 @@ void bubbleSort(int *num, int size)
 }
 
 
-
+//last буква в строке
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -82,7 +83,7 @@ int symbol =character; //символ в ситсеме аски
 }
 
 
-
+//з 2 в 10 систему
 #include <stdio.h>
 #include <stdbool.h>
 #include <math.h>
@@ -159,4 +160,33 @@ void upp(char *a, const int count){
     }    
 }
 
+//вернуть 1 если две буквы или большые или меленкие
+//вернуть 0 если две буквы разных ромеров
+//вернуть -1 если хоть один из символв не есть буквой
+#include <string.h>
+#include <stdio.h>
+
+int creat(charr a, char b){
+    if((a>='a' && a<='z') && (b>='a' && b<='z')) return 1;
+    if((a>='A' && a<='Z') && (b>='A' && b<='Z')) return 1;
+    if((a>='A' && a<='Z') && (b>='a' && b<='z')) return 0;
+    if((a>='a' && a<='z') && (b>='A' && b<='Z')) return 0;
+    else return -1;
+    
+}
+
+//вернуть 1 если год высокоснй
+//вернуть 0 если нет
+//1)год высокосный если он делитьса на 400
+//2)не високосный если делитса на 100
+//3)высокосный если делитса на 4
+///1 2 и 3 где выше приоритет то истина 200-не высокосный год
+#include <string.h>
+#include <stdio.h>
+
+int big_year(int year){
+    if(year%400==0 ||(year%100!=0 && year%4==0)) return 1;
+    return 0;
+    
+} 
 
