@@ -102,24 +102,7 @@ return res;
 
 
 
-#include <stdio.h>
-#include <stdbool.h>
-#include <math.h>
-char decode_byte(const bool bits[8]){
-    
-int sum=0;
-    for(int i=0,j=7;i<=7;i++,j--){
-        if(bits[i]==1){
-        sum+=pow(2,j);
-
-        }    
-    }
-char res=sum;
-return res;
-}
-
-
-
+//Конченая последовательность
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -140,7 +123,7 @@ int a(const int aa){
     return sum;
 }
 
-
+//Большие в маленькие 
 
 #include <string.h>
 #include <stdio.h>
